@@ -1,6 +1,5 @@
 import { createApp } from "vue";
 import { setupStore } from "./stores";
-import "@nutui/nutui-taro/dist/style.css";
 import "./app.css";
 
 

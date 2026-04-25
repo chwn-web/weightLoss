@@ -1,21 +1,21 @@
 export default defineAppConfig({
   pages: [
-    'pages/index/index', 
-    'pages/my/my',
-    'pages/test/test',
+    'pages/index/index',
   ],
-  tabBar: {
-    custom: true,
-    list: [
-      { pagePath: 'pages/index/index', text: '首页' },
-      { pagePath: 'pages/test/test', text: '测试' },
-      { pagePath: 'pages/my/my', text: '我的' },
-    ]
-  },
+  subPackages: [
+    {
+      root: 'package-other',
+      pages: [
+        'my/my',
+        'test/test',
+      ]
+    }
+  ],
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: 'WeChat',
     navigationBarTextStyle: 'black'
-  }
+  },
+  lazyCodeLoading: 'requiredComponents'
 })
