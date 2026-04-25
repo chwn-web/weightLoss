@@ -5,11 +5,11 @@
   "appid": "TARO_APP_ID",
   "setting": {
     "urlCheck": true,
-    "es6": false,
-    "enhance": false,
-    "compileHotReLoad": false,
+    "es6": true,
+    "enhance": true,
+    "compileHotReLoad": true,
     "postcss": false,
-    "minified": false
+    "minified": true
   },
   "compileType": "miniprogram"
 }
